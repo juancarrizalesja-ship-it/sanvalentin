@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi amor 💖</title>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+      max-width: 420px;
+      animation: aparecer 1s ease;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    h1 {
+      color: #ff4d6d;
+    }
+
+    p {
+      color: #444;
+      font-size: 16px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+      margin: 15px 0;
+    }
+
+    button {
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #ff4d6d;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card" id="contenido">
+  <h1>Hola, amor 💖</h1>
+  <p>
+    Desde que llegaste a mi vida,<br>
+    mis días son más bonitos,<br>
+    mis risas más sinceras<br>
+    y mi corazón tiene hogar ✨
+  </p>
+
+  <p><strong>Pequeño acertijo para ti:</strong></p>
+  <p>
+    No es un lugar,<br>
+    no es una fecha,<br>
+    pero contigo se vuelve especial.<br><br>
+    ¿Qué es? 💭
+  </p>
+
+  <button onclick="siguiente1()">Seguir 💌</button>
+</div>
+
+<script>
+function siguiente1() {
+  document.getElementById("contenido").innerHTML = `
+    <h1>La respuesta eres tú 💕</h1>
+
+    <p>
+      Porque cualquier momento,<br>
+      cualquier lugar,<br>
+      cualquier día…<br>
+      es mejor si es contigo 💖
+    </p>
+
+    <img src="nosotros1.jpg" alt="Nosotros">
+    <img src="nosotros2.jpg" alt="Nosotros">
+    <img src="nosotros3.jpg" alt="Nosotros">
+
+    <p>
+      Gracias por tu sonrisa,<br>
+      por tu paciencia,<br>
+      y por hacerme sentir amado<br>
+      incluso en los días grises ✨
+    </p>
+
+    <button onclick="siguiente2()">Hay algo más… 💘</button>
+  `;
+}
+
+function siguiente2() {
+  document.getElementById("contenido").innerHTML = `
+    <h1>Ahora sí, amor 💖</h1>
+
+    <p>
+      No quiero solo un día bonito,<br>
+      quiero un recuerdo contigo.<br><br>
+
+      Reírnos,<br>
+      abrazarnos,<br>
+      mirarnos como solo nosotros sabemos hacerlo 💕
+    </p>
+
+    <h2>¿Quieres ser mi San Valentín? 💘</h2>
+
+    <button onclick="final()">Sí, contigo siempre 💖</button>
+  `;
+}
+
+function final() {
+  document.body.innerHTML = `
+    <div class="card">
+      <h1>TE AMO 🥹💖</h1>
+      <p>
+        Prometo cuidar tu corazón,<br>
+        elegirte cada día<br>
+        y hacer de este San Valentín<br>
+        uno que nunca olvidemos ✨
+      </p>
+      <p>Eres mi persona favorita 💕</p>
+    </div>
+  `;
+}
+</script>
+
+</body>
+</html>
